@@ -3,7 +3,7 @@ import gym
 from baselines import deepq
 from baselines.common.atari_wrappers import ScaledFloatFrame
 
-import eater
+import cleaner
 
 import time
 from baselines import logger
@@ -16,8 +16,8 @@ logger.configure(dir="logs/" + str(int(time.time())) + RUN_NAME, format_strs=['s
 RENDER = "state"
 
 def main():
-    # env = gym.make("EaterNoFrameskipSingleObjectiveRandomized-v1")
-    env = gym.make("EaterNoFrameskipSingleObjective-v1")
+    # env = gym.make("CleanerNoFrameskipSingleObjectiveRandomized-v1")
+    env = gym.make("CleanerNoFrameskipSingleObjective-v1")
     env = ScaledFloatFrame(env)
 
     model = deepq.models.cnn_to_mlp(

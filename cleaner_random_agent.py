@@ -1,10 +1,10 @@
 import gym
-import eater
+import cleaner
 import time, random
 
 if __name__ == "__main__":
 
-    eater = gym.make("EaterNoFrameskipMultiObjectiveRandomized-v1")
+    eater = gym.make("CleanerNoFrameskipMultiObjectiveRandomized-v1")
     print(eater.observation_space.shape)
     fps = 0
     t = int(time.time())

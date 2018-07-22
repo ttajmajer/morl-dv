@@ -67,7 +67,7 @@ def rad2vec(r):
     return b2Vec2(math.cos(r), math.sin(r))
 
 
-class Eater(gym.Env):
+class Cleaner(gym.Env):
     metadata = {
         'render.modes': ['human', 'rgb_array', 'gs_array'],
     }
@@ -600,32 +600,32 @@ class Eater(gym.Env):
 from gym.envs.registration import registry, register, make, spec
 
 register(
-    id='EaterNoFrameskipMultiObjective-v1',
-    entry_point='eater:Eater',
+    id='CleanerNoFrameskipMultiObjective-v1',
+    entry_point='cleaner:Cleaner',
     kwargs={'summed_objectives' : False},
 )
 
 register(
-    id='EaterNoFrameskipMultiObjectiveRandomized-v1',
-    entry_point='eater:Eater',
+    id='CleanerNoFrameskipMultiObjectiveRandomized-v1',
+    entry_point='cleaner:Cleaner',
     kwargs={'summed_objectives' : False, 'randomized' : True},
 )
 
 register(
-    id='EaterNoFrameskipMultiObjectiveRandomizedDeterministic-v1',
-    entry_point='eater:Eater',
+    id='CleanerNoFrameskipMultiObjectiveRandomizedDeterministic-v1',
+    entry_point='cleaner:Cleaner',
     kwargs={'summed_objectives' : False, 'randomized' : True, 'deterministic' : True},
 )
 
 register(
-    id='EaterNoFrameskipSingleObjective-v1',
-    entry_point='eater:Eater',
+    id='CleanerNoFrameskipSingleObjective-v1',
+    entry_point='cleaner:Cleaner',
     kwargs={'summed_objectives' : True},
 )
 
 register(
-    id='EaterNoFrameskipSingleObjectiveRandomized-v1',
-    entry_point='eater:Eater',
+    id='CleanerNoFrameskipSingleObjectiveRandomized-v1',
+    entry_point='cleaner:Cleaner',
     kwargs={'summed_objectives' : True, 'randomized' : True},
 )
 

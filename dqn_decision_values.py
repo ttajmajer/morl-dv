@@ -6,7 +6,7 @@ from baselines.common.atari_wrappers import ScaledFloatFrame
 import time
 import tensorflow as tf
 
-import eater
+import cleaner
 
 from baselines import logger
 
@@ -19,10 +19,10 @@ RENDER = "state"
 
 def main():
 
-    # env = gym.make("EaterNoFrameskipMultiObjective-v1")
-    #env = gym.make("EaterNoFrameskipMultiObjectiveRandomized-v1")
-    env = gym.make("EaterNoFrameskipMultiObjectiveRandomizedDeterministic-v1")
-    # env = gym.make("EaterNoFrameskipSingleObjective-v1")
+    # env = gym.make("CleanerNoFrameskipMultiObjective-v1")
+    #env = gym.make("CleanerNoFrameskipMultiObjectiveRandomized-v1")
+    env = gym.make("CleanerNoFrameskipMultiObjectiveRandomizedDeterministic-v1")
+    # env = gym.make("CleanerNoFrameskipSingleObjective-v1")
     env = ScaledFloatFrame(env)
 
     models = {}

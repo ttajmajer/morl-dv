@@ -4,15 +4,15 @@ import multiobjective as subsumption
 from baselines.common.atari_wrappers import ScaledFloatFrame
 import time
 import numpy as np
-import eater
+import cleaner
 import sys
 
 
 def run_dqn(model, priorities, weights, disable_dvs, episodes_count):
     # env = gym.make("PongNoFrameskip-v4")
-    # env = gym.make("EaterNoFrameskipMultiObjective-v1")
-    env = gym.make("EaterNoFrameskipMultiObjectiveRandomizedDeterministic-v1")
-    # env = gym.make("EaterNoFrameskipSingleObjective-v1")
+    # env = gym.make("CleanerNoFrameskipMultiObjective-v1")
+    env = gym.make("CleanerNoFrameskipMultiObjectiveRandomizedDeterministic-v1")
+    # env = gym.make("CleanerNoFrameskipSingleObjective-v1")
     env = ScaledFloatFrame(env)
 
     print("WEIGHTS: ", weights)

@@ -6,14 +6,14 @@ https://arxiv.org/abs/1704.06676
 
 ![](fig1.png)
 
-### Eater environment
+### Cleaner environment
 
-Easter is a simple game which simulates an autonomous vacuum cleaner. It iss based on OpenAI's gym framework.
-Eater comes in several versions: multi-objective and single-objective and it can be used with existing RL methods.
+Cleaner is a simple game which simulates an autonomous vacuum cleaner. It is based on OpenAI's gym framework.
+Cleaner comes in several versions: multi-objective and single-objective and it can be used with existing RL methods.
 
-To test eater run `eater_random_agent.py` script.
+To run cleaner run `cleaner_random_agent.py` script.
 
-To test eater with standard DQN run `eater_test_with_standard_dqn.py`
+To test cleaner with standard DQN run `cleaner_test_with_standard_dqn.py`
 
 ![](fig2.png)
 
@@ -27,7 +27,7 @@ pip install -r requiremets.txt
 
 ### Running multi-objective DQNs with decision values
 
-`dqn_decision_values.py` script will run eater with a 3-objective DQN.
+`dqn_decision_values.py` script will run cleaner with a 3-objective DQN.
 After training the model will be saved.
 
 ### Testing
