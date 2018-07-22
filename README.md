@@ -15,6 +15,8 @@ To run cleaner run `cleaner_random_agent.py` script.
 
 To test cleaner with standard DQN run `cleaner_test_with_standard_dqn.py`
 
+While cleaner is running you can use 'm' key to display full map and 'q' key to hide it.
+
 ![](fig2.png)
 
 ### Preparation
