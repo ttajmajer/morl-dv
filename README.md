@@ -1,4 +1,4 @@
-# Modular Multi-Objective Reinforcement Learning with Decision Values
+# Modular Multi-Objective Deep Reinforcement Learning with Decision Values
 
 This repository contains source codes for work described in:
 *"Modular Multi-Objective Deep Reinforcement Learning with Decision Values"*, Tomasz Tajmajer
