@@ -20,8 +20,8 @@ RENDER = "state"
 def main():
 
     # env = gym.make("EaterNoFrameskipMultiObjective-v1")
-    env = gym.make("EaterNoFrameskipMultiObjectiveRandomized-v1")
-    # env = gym.make("EaterNoFrameskipMultiObjectiveRandomizedDeterministic-v1")
+    #env = gym.make("EaterNoFrameskipMultiObjectiveRandomized-v1")
+    env = gym.make("EaterNoFrameskipMultiObjectiveRandomizedDeterministic-v1")
     # env = gym.make("EaterNoFrameskipSingleObjective-v1")
     env = ScaledFloatFrame(env)
 
@@ -56,7 +56,7 @@ def main():
         gamma=0.99,
         print_freq=1,
         flat_decision_values=True,
-        disable_dv=True,
+        disable_dv=False,
     )
     act.save(RUN_NAME)
     env.close()
