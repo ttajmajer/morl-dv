@@ -45,4 +45,6 @@ e.g.
 
 ### Help
 
-For more information refer to the paper or contact me
+For more information refer to the paper or contact me.
+
+*Tomasz Tajmajer*
