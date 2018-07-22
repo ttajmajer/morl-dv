@@ -42,6 +42,9 @@ e.g.
 
 `python dqn_decision_values_load.py example_model 0.1 0.2 0.7 10`
 
+### Credits
+
+This work was based mainly on OpenAI baselines.
 
 ### Help
 
