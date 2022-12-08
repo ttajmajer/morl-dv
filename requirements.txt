@@ -15,7 +15,7 @@ azure-storage==0.20.3
 -e git+https://github.com/openai/baselines.git@6a3cbb4bc57633b2e0d6aa1cb9556c2b4a0b6989#egg=baselines
 bleach==1.5.0
 Box2D==2.3.2
-certifi==2017.7.27.1
+certifi==2022.12.7
 chardet==3.0.4
 cloudpickle==0.5.1
 cycler==0.10.0
